@@ -1,0 +1,31 @@
+.dogWrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  .searchBreedImg {
+    margin-right: 16px;
+    width: 22rem;
+    height: 37px;
+  }
+
+  .btn-success {
+    margin-left: 16px;
+  }
+
+  .imgWrapper {
+    margin-top: 2rem;
+
+    .breedSearch {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .card {
+        margin: 1rem;
+      }
+    }
+  }
+
+}
