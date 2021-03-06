@@ -1,1 +1,1 @@
-# Small angular project calling Dog CEO API
+# Small projects calling Dog CEO API
