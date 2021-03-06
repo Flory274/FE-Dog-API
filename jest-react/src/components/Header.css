@@ -1,0 +1,21 @@
+.logo{
+border: 1px solid #fff;
+border-radius: 3px;
+font-size: calc(10px + 1vmin);
+padding: 4px;
+background: linear-gradient( -90deg, #fff 49%,  #000 49% );
+}
+.logo b{
+    color: #073ca5;
+    border-radius: 3px;
+    padding: 1px;
+}
+.logo-span{
+    font-size: calc(10px + 0.1vmin);
+    margin-right: 0.2vw;
+    font-weight: lighter;
+}
+.blog-title{
+ font-size: 4vw;
+ font-weight: 600;
+}

@@ -1,0 +1,17 @@
+.menu-container{
+    height: auto;
+    width: 20vw;
+    color: #fff;
+    background-color: #393f4b;
+    
+}
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+    margin-left: 2vw;
+}
+.link{
+    padding: 2vw;
+    text-align: left;
+}
