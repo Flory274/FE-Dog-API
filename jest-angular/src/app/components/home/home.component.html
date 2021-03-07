@@ -1,10 +1,23 @@
 <div class="dogWrapper">
-  <div>
+
+  <!-- <div>
     <input class="searchBreedImg" #searchBreed />
     <button class="btn btn-md btn-primary" type="button" (click)="getDogInput(searchBreed.value)">Find</button>
     <button class="btn btn-md btn-success" type="button" (click)="getRandom()">Random</button>
-  </div>
+  </div> -->
 
+  <!-- <div>
+    <input type="text" [(ngModel)]="dog" />
+    <button [disabled]="!noDog" (click)="addDogName()">Add</button>
+    <p>{{dog}}</p>
+  </div> -->
+
+  <div>
+    <input class="searchBreedImg" [(ngModel)]="dog" />
+    <button class="btn btn-md btn-primary" type="button" (click)="getDogInput(dog)">Find</button>
+    <button class="btn btn-md btn-success" type="button" (click)="getRandom()">Random</button>
+    <a class="btn btn-md btn-info" [routerLink]="['/akita']">See Akita</a>
+  </div>
 
   <div class="imgWrapper">
     <div *ngIf="!switchToRandom" class="breedSearch">
@@ -21,5 +34,6 @@
       </div>
     </div>
   </div>
+
 
 </div>
