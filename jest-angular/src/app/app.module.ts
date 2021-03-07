@@ -8,9 +8,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { AkitaDogComponent } from './components/akita-dog/akita-dog.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, AkitaDogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
