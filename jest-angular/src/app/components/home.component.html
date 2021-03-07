@@ -1,0 +1,28 @@
+<div class="dogWrapper">
+
+  <div>
+    <input class="searchBreedImg" #searchBreed />
+    <button class="btn btn-md btn-primary" type="button" (click)="getDogInput(searchBreed.value)">Find</button>
+    <button class="btn btn-md btn-success" type="button" (click)="getRandom()">Random</button>
+    <a class="btn btn-md btn-info" [routerLink]="['/akita']">See Akita</a>
+  </div>
+
+
+  <div class="imgWrapper">
+    <div *ngIf="!switchToRandom" class="breedSearch">
+      <div class="card" *ngFor="let breed of breedImages | keyvalue">
+        <div class="card-body">
+          <img src="{{breed.value}}" height="160px" />
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="switchToRandom" class="card">
+      <div class="card-body">
+        <img src="{{randomPicture}}" height="300px" />
+      </div>
+    </div>
+  </div>
+
+
+</div>
